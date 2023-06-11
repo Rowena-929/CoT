@@ -13,7 +13,7 @@ genre = ['Historical Fiction', 'Literary Fiction', 'Science Fiction']
 mood = ['angry']
 # num_kind = len(suject) * len(mood) * len(genre)
 
-with open("plot.txt", 'r', encoding='utf-8') as file:  # yyx change
+with open("inputs/plot.txt", 'r', encoding='utf-8') as file:  # yyx change
     reddit_plot = [k.strip() for k in file.readlines()]
     for i in range(len(reddit_plot)):
         j = reddit_plot[i].find('[ ')
